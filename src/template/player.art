@@ -207,19 +207,19 @@
                     {{@ icons.lrc }}
                 </button>
             </div>
+            <ol class="aplayer-list{{ if options.listFolded }} aplayer-list-hide{{ /if }}">
+                {{ include './list-title.art' getObject({
+                    icons: icons
+                }) }}
+                {{ include './list-item.art' getObject({
+                    theme: options.theme,
+                    audio: options.audio,
+                    index: 1
+                }) }}
+            </ol>
         </div>
     </div>
     <div class="aplayer-notice"></div>
     <div class="aplayer-miniswitcher"><button class="aplayer-icon">{{@ icons.right }}</button></div>
 </div>
-<ol class="aplayer-list{{ if options.listFolded }} aplayer-list-hide{{ /if }}">
-    {{ include './list-title.art' getObject({
-        icons: icons
-    }) }}
-    {{ include './list-item.art' getObject({
-        theme: options.theme,
-        audio: options.audio,
-        index: 1
-    }) }}
-</ol>
 {{ /if }}

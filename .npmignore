@@ -4,4 +4,5 @@ webpack
 .gitignore
 postcss.config.js
 /dist/index.html
+/dist/assets/
 npm-debug.log
